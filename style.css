@@ -1,0 +1,62 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: large;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Light gray background for a neat look */
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150;
+    padding: 150;
+
+}
+
+.menu li {
+    margin: 45 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px; /* Bigger font size */
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 10px;
+}
+
+/* Hover effects */
+.menu a:hover {
+    color: #007BFF; /* Bright blue on hover */
+    border-bottom: 3px solid #007BFF;
+}
+
+/* Scrolled navbar styles */
+.navbar.scrolled {
+    background-color: #007BFF; /* Blue background when scrolled */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.scrolled a {
+    color: white;
+}
